@@ -1,8 +1,6 @@
 import 'controller/k0_controller.dart';
 import 'package:chengxue_s_application9/core/app_export.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 
 // ignore_for_file: must_be_immutable
 class K0Screen extends GetWidget<K0Controller> {
@@ -17,7 +15,6 @@ class K0Screen extends GetWidget<K0Controller> {
       child: Scaffold(
         extendBody: true,
         extendBodyBehindAppBar: true,
-        resizeToAvoidBottomInset: false,
         backgroundColor: ColorConstant.whiteA700,
         body: Container(
           width: size.width,
@@ -121,44 +118,154 @@ class K0Screen extends GetWidget<K0Controller> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: getPadding(
-                    left: 48,
-                    top: 221,
-                  ),
-                  child: Obx(
-                    () => PinCodeTextField(
-                      appContext: context,
-                      controller: controller.otpController.value,
-                      length: 4,
-                      obscureText: false,
-                      obscuringCharacter: '*',
-                      keyboardType: TextInputType.number,
-                      autoDismissKeyboard: true,
-                      enableActiveFill: true,
-                      inputFormatters: [
-                        FilteringTextInputFormatter.digitsOnly,
-                      ],
-                      onChanged: (value) {},
-                      pinTheme: PinTheme(
-                        fieldHeight: getHorizontalSize(
-                          55,
-                        ),
-                        fieldWidth: getHorizontalSize(
-                          60,
-                        ),
-                        shape: PinCodeFieldShape.box,
-                        borderRadius: BorderRadius.circular(
-                          getHorizontalSize(
-                            20,
+                Align(
+                  alignment: Alignment.topLeft,
+                  child: Card(
+                    clipBehavior: Clip.antiAlias,
+                    elevation: 0,
+                    margin: getMargin(
+                      left: 120,
+                      top: 221,
+                    ),
+                    color: ColorConstant.blueGray100,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadiusStyle.roundedBorder20,
+                    ),
+                    child: Container(
+                      height: getVerticalSize(
+                        55,
+                      ),
+                      width: getHorizontalSize(
+                        60,
+                      ),
+                      padding: getPadding(
+                        left: 9,
+                        top: 4,
+                        right: 9,
+                        bottom: 4,
+                      ),
+                      decoration: AppDecoration.fillBluegray100.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder20,
+                      ),
+                      child: Stack(
+                        children: [
+                          CustomImageView(
+                            svgPath: ImageConstant.imgCalendar,
+                            height: getVerticalSize(
+                              46,
+                            ),
+                            width: getHorizontalSize(
+                              42,
+                            ),
+                            alignment: Alignment.center,
                           ),
-                        ),
-                        selectedFillColor: ColorConstant.blueGray100,
-                        activeFillColor: ColorConstant.blueGray100,
-                        inactiveFillColor: ColorConstant.blueGray100,
-                        inactiveColor: ColorConstant.fromHex("#1212121D"),
-                        selectedColor: ColorConstant.fromHex("#1212121D"),
-                        activeColor: ColorConstant.fromHex("#1212121D"),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                CustomImageView(
+                  svgPath: ImageConstant.imgUser,
+                  height: getVerticalSize(
+                    38,
+                  ),
+                  width: getHorizontalSize(
+                    40,
+                  ),
+                  alignment: Alignment.topLeft,
+                  margin: getMargin(
+                    left: 58,
+                    top: 230,
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Card(
+                    clipBehavior: Clip.antiAlias,
+                    elevation: 0,
+                    margin: getMargin(
+                      top: 221,
+                      right: 141,
+                    ),
+                    color: ColorConstant.blueGray100,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadiusStyle.roundedBorder20,
+                    ),
+                    child: Container(
+                      height: getVerticalSize(
+                        55,
+                      ),
+                      width: getHorizontalSize(
+                        60,
+                      ),
+                      padding: getPadding(
+                        left: 7,
+                        top: 4,
+                        right: 7,
+                        bottom: 4,
+                      ),
+                      decoration: AppDecoration.fillBluegray100.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder20,
+                      ),
+                      child: Stack(
+                        children: [
+                          CustomImageView(
+                            svgPath: ImageConstant.imgVolume,
+                            height: getVerticalSize(
+                              44,
+                            ),
+                            width: getHorizontalSize(
+                              45,
+                            ),
+                            alignment: Alignment.bottomCenter,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Card(
+                    clipBehavior: Clip.antiAlias,
+                    elevation: 0,
+                    margin: getMargin(
+                      top: 221,
+                      right: 69,
+                    ),
+                    color: ColorConstant.blueGray100,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadiusStyle.roundedBorder20,
+                    ),
+                    child: Container(
+                      height: getVerticalSize(
+                        55,
+                      ),
+                      width: getHorizontalSize(
+                        60,
+                      ),
+                      padding: getPadding(
+                        left: 9,
+                        top: 5,
+                        right: 9,
+                        bottom: 5,
+                      ),
+                      decoration: AppDecoration.fillBluegray100.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder20,
+                      ),
+                      child: Stack(
+                        children: [
+                          CustomImageView(
+                            svgPath: ImageConstant.imgGrid,
+                            height: getSize(
+                              42,
+                            ),
+                            width: getSize(
+                              42,
+                            ),
+                            alignment: Alignment.bottomCenter,
+                          ),
+                        ],
                       ),
                     ),
                   ),
