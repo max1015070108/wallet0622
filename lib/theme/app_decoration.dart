@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:chengxue_s_application9/core/app_export.dart';
 
 class AppDecoration {
+  static BoxDecoration get fillIndigoA20001 => BoxDecoration(
+        color: ColorConstant.indigoA20001,
+      );
   static BoxDecoration get fillIndigo800 => BoxDecoration(
         color: ColorConstant.indigo800,
       );
