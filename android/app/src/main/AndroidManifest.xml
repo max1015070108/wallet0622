@@ -10,7 +10,7 @@
 
 
     <application
-        android:label="chengxue_s_application9"
+        android:label="deepdiaryapp"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

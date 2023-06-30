@@ -1,4 +1,4 @@
-name: chengxue_s_application9
+name: deepdiaryapp
 description: A new Flutter project.
 version: 1.0.0+1
 environment: 
@@ -20,3 +20,10 @@ flutter:
   assets: 
     - assets/
     - assets/images/
+  fonts: 
+    - family: Raleway
+      fonts: 
+        - asset: assets/fonts/RalewayRomanBold.ttf
+          weight: 700
+        - asset: assets/fonts/RalewayRomanSemiBold.ttf
+          weight: 600

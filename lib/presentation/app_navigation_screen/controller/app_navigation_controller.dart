@@ -1,5 +1,5 @@
-import 'package:chengxue_s_application9/core/app_export.dart';
-import 'package:chengxue_s_application9/presentation/app_navigation_screen/models/app_navigation_model.dart';
+import 'package:deepdiaryapp/core/app_export.dart';
+import 'package:deepdiaryapp/presentation/app_navigation_screen/models/app_navigation_model.dart';
 
 /// A controller class for the AppNavigationScreen.
 ///

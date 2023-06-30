@@ -1,5 +1,5 @@
 import 'controller/app_navigation_controller.dart';
-import 'package:chengxue_s_application9/core/app_export.dart';
+import 'package:deepdiaryapp/core/app_export.dart';
 import 'package:flutter/material.dart';
 
 class AppNavigationScreen extends GetWidget<AppNavigationController> {
@@ -104,7 +104,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapPeople();
+                                              onTapFileupload();
                                             },
                                             child: Container(
                                                 decoration:
@@ -125,7 +125,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "lbl_people"
+                                                                  "lbl_file_upload2"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -162,13 +162,13 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
     );
   }
 
-  /// Navigates to the peopleScreen when the action is triggered.
+  /// Navigates to the fileUploadScreen when the action is triggered.
 
   /// When the action is triggered, this function uses the `Get` package to
-  /// push the named route for the peopleScreen.
-  onTapPeople() {
+  /// push the named route for the fileUploadScreen.
+  onTapFileupload() {
     Get.toNamed(
-      AppRoutes.peopleScreen,
+      AppRoutes.fileUploadScreen,
     );
   }
 }

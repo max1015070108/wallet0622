@@ -1,15 +1,15 @@
-import 'package:chengxue_s_application9/presentation/k0_screen/k0_screen.dart';
-import 'package:chengxue_s_application9/presentation/k0_screen/binding/k0_binding.dart';
-import 'package:chengxue_s_application9/presentation/people_screen/people_screen.dart';
-import 'package:chengxue_s_application9/presentation/people_screen/binding/people_binding.dart';
-import 'package:chengxue_s_application9/presentation/app_navigation_screen/app_navigation_screen.dart';
-import 'package:chengxue_s_application9/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
+import 'package:deepdiaryapp/presentation/k0_screen/k0_screen.dart';
+import 'package:deepdiaryapp/presentation/k0_screen/binding/k0_binding.dart';
+import 'package:deepdiaryapp/presentation/file_upload_screen/file_upload_screen.dart';
+import 'package:deepdiaryapp/presentation/file_upload_screen/binding/file_upload_binding.dart';
+import 'package:deepdiaryapp/presentation/app_navigation_screen/app_navigation_screen.dart';
+import 'package:deepdiaryapp/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
   static const String k0Screen = '/k0_screen';
 
-  static const String peopleScreen = '/people_screen';
+  static const String fileUploadScreen = '/file_upload_screen';
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
@@ -24,10 +24,10 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: peopleScreen,
-      page: () => PeopleScreen(),
+      name: fileUploadScreen,
+      page: () => FileUploadScreen(),
       bindings: [
-        PeopleBinding(),
+        FileUploadBinding(),
       ],
     ),
     GetPage(

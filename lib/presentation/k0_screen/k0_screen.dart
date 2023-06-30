@@ -1,5 +1,5 @@
 import 'controller/k0_controller.dart';
-import 'package:chengxue_s_application9/core/app_export.dart';
+import 'package:deepdiaryapp/core/app_export.dart';
 import 'package:flutter/material.dart';
 
 class K0Screen extends GetWidget<K0Controller> {
@@ -21,7 +21,7 @@ class K0Screen extends GetWidget<K0Controller> {
                         image: AssetImage(ImageConstant.img),
                         fit: BoxFit.cover)),
                 child: SizedBox(
-                    height: size.height,
+                    height: getVerticalSize(852),
                     width: double.maxFinite,
                     child: Stack(alignment: Alignment.topCenter, children: [
                       Align(
@@ -61,12 +61,21 @@ class K0Screen extends GetWidget<K0Controller> {
                       Align(
                           alignment: Alignment.center,
                           child: Container(
-                              height: getVerticalSize(353),
-                              width: double.maxFinite,
-                              decoration: BoxDecoration(
-                                  color: ColorConstant.indigoA200,
-                                  borderRadius: BorderRadius.circular(
-                                      getHorizontalSize(20))))),
+                              padding: getPadding(
+                                  left: 169, top: 84, right: 169, bottom: 84),
+                              decoration: AppDecoration.fillIndigoA200.copyWith(
+                                  borderRadius:
+                                      BorderRadiusStyle.roundedBorder20),
+                              child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    CustomImageView(
+                                        svgPath: ImageConstant.imgArrowup,
+                                        height: getSize(53),
+                                        width: getSize(53),
+                                        margin: getMargin(top: 130))
+                                  ]))),
                       Align(
                           alignment: Alignment.topLeft,
                           child: Card(
@@ -157,13 +166,7 @@ class K0Screen extends GetWidget<K0Controller> {
                     ])))));
   }
 
-  /// Navigates to the peopleScreen when the action is triggered.
-
-  /// When the action is triggered, this function uses the `Get` package to
-  /// push the named route for the peopleScreen.
   onTapImgUser() {
-    Get.toNamed(
-      AppRoutes.peopleScreen,
-    );
+    // TODO: implement Actions
   }
 }
