@@ -11,7 +11,7 @@ Size size = WidgetsBinding.instance.window.physicalSize /
 // These are used in the code as a reference to create your UI Responsively.
 const num FIGMA_DESIGN_WIDTH = 393;
 const num FIGMA_DESIGN_HEIGHT = 852;
-const num FIGMA_DESIGN_STATUS_BAR = 0;
+const num FIGMA_DESIGN_STATUS_BAR = 47;
 
 ///This method is used to get device viewport width.
 get width {

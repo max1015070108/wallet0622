@@ -1,9 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:chengxue_s_application9/core/app_export.dart';
+import 'package:deepdiaryapp/core/app_export.dart';
 
 class AppDecoration {
-  static BoxDecoration get fillIndigoA20001 => BoxDecoration(
-        color: ColorConstant.indigoA20001,
+  static BoxDecoration get outlineGray300 => BoxDecoration(
+        color: ColorConstant.blueGray50,
+        border: Border.all(
+          color: ColorConstant.gray300,
+          width: getHorizontalSize(
+            5,
+          ),
+          strokeAlign: strokeAlignOutside,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: ColorConstant.black9000c,
+            spreadRadius: getHorizontalSize(
+              2,
+            ),
+            blurRadius: getHorizontalSize(
+              2,
+            ),
+            offset: Offset(
+              0,
+              4,
+            ),
+          ),
+        ],
+      );
+  static BoxDecoration get outlineGray400 => BoxDecoration(
+        color: ColorConstant.whiteA700,
       );
   static BoxDecoration get fillIndigo800 => BoxDecoration(
         color: ColorConstant.indigo800,
@@ -11,12 +36,36 @@ class AppDecoration {
   static BoxDecoration get fillBluegray100 => BoxDecoration(
         color: ColorConstant.blueGray100,
       );
+  static BoxDecoration get fillIndigoA200 => BoxDecoration(
+        color: ColorConstant.indigoA200,
+      );
   static BoxDecoration get fillWhiteA700 => BoxDecoration(
         color: ColorConstant.whiteA700,
+      );
+  static BoxDecoration get outlineGray600 => BoxDecoration(
+        color: ColorConstant.gray2007a,
+        border: Border.all(
+          color: ColorConstant.gray600,
+          width: getHorizontalSize(
+            3,
+          ),
+        ),
       );
 }
 
 class BorderRadiusStyle {
+  static BorderRadius roundedBorder5 = BorderRadius.circular(
+    getHorizontalSize(
+      5,
+    ),
+  );
+
+  static BorderRadius roundedBorder10 = BorderRadius.circular(
+    getHorizontalSize(
+      10,
+    ),
+  );
+
   static BorderRadius roundedBorder20 = BorderRadius.circular(
     getHorizontalSize(
       20,

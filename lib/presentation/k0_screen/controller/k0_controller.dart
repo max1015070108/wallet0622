@@ -1,5 +1,5 @@
-import 'package:chengxue_s_application9/core/app_export.dart';
-import 'package:chengxue_s_application9/presentation/k0_screen/models/k0_model.dart';
+import 'package:deepdiaryapp/core/app_export.dart';
+import 'package:deepdiaryapp/presentation/k0_screen/models/k0_model.dart';
 
 /// A controller class for the K0Screen.
 ///

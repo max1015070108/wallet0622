@@ -1,5 +1,5 @@
-import 'package:chengxue_s_application9/core/app_export.dart';
-import 'package:chengxue_s_application9/data/apiClient/api_client.dart';
+import 'package:deepdiaryapp/core/app_export.dart';
+import 'package:deepdiaryapp/data/apiClient/api_client.dart';
 
 class InitialBindings extends Bindings {
   @override
