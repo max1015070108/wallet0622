@@ -27,14 +27,14 @@ class AppDecoration {
           ),
         ],
       );
-  static BoxDecoration get outlineGray400 => BoxDecoration(
-        color: ColorConstant.whiteA700,
-      );
   static BoxDecoration get fillIndigo800 => BoxDecoration(
         color: ColorConstant.indigo800,
       );
   static BoxDecoration get fillBluegray100 => BoxDecoration(
         color: ColorConstant.blueGray100,
+      );
+  static BoxDecoration get outlineGray40001 => BoxDecoration(
+        color: ColorConstant.whiteA700,
       );
   static BoxDecoration get fillIndigoA200 => BoxDecoration(
         color: ColorConstant.indigoA200,
@@ -54,9 +54,15 @@ class AppDecoration {
 }
 
 class BorderRadiusStyle {
-  static BorderRadius roundedBorder5 = BorderRadius.circular(
+  static BorderRadius roundedBorder7 = BorderRadius.circular(
     getHorizontalSize(
-      5,
+      7,
+    ),
+  );
+
+  static BorderRadius roundedBorder24 = BorderRadius.circular(
+    getHorizontalSize(
+      24,
     ),
   );
 
