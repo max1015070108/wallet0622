@@ -59,7 +59,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                       children: [
                                         GestureDetector(
                                             onTap: () {
-                                              onTaptf();
+                                              onTapLogin();
                                             },
                                             child: Container(
                                                 decoration:
@@ -80,7 +80,8 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "lbl".tr,
+                                                                  "lbl_login"
+                                                                      .tr,
                                                                   overflow:
                                                                       TextOverflow
                                                                           .ellipsis,
@@ -100,7 +101,99 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                   getVerticalSize(
                                                                       1),
                                                               color: ColorConstant
-                                                                  .blueGray400))
+                                                                  .blueGray40002))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapFrameOne();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "lbl_frame_one"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .blueGray40002))
+                                                    ]))),
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapFirstpage();
+                                            },
+                                            child: Container(
+                                                decoration:
+                                                    AppDecoration.fillWhiteA700,
+                                                child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 20,
+                                                                      top: 10,
+                                                                      right: 20,
+                                                                      bottom:
+                                                                          10),
+                                                              child: Text(
+                                                                  "lbl_first_page"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRegular20))),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 5),
+                                                          child: Divider(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              thickness:
+                                                                  getVerticalSize(
+                                                                      1),
+                                                              color: ColorConstant
+                                                                  .blueGray40002))
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
@@ -146,19 +239,39 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                   getVerticalSize(
                                                                       1),
                                                               color: ColorConstant
-                                                                  .blueGray400))
+                                                                  .blueGray40002))
                                                     ])))
                                       ]))))
                     ]))));
   }
 
-  /// Navigates to the k0Screen when the action is triggered.
+  /// Navigates to the loginScreen when the action is triggered.
 
   /// When the action is triggered, this function uses the `Get` package to
-  /// push the named route for the k0Screen.
-  onTaptf() {
+  /// push the named route for the loginScreen.
+  onTapLogin() {
     Get.toNamed(
-      AppRoutes.k0Screen,
+      AppRoutes.loginScreen,
+    );
+  }
+
+  /// Navigates to the frameOneScreen when the action is triggered.
+
+  /// When the action is triggered, this function uses the `Get` package to
+  /// push the named route for the frameOneScreen.
+  onTapFrameOne() {
+    Get.toNamed(
+      AppRoutes.frameOneScreen,
+    );
+  }
+
+  /// Navigates to the firstPageScreen when the action is triggered.
+
+  /// When the action is triggered, this function uses the `Get` package to
+  /// push the named route for the firstPageScreen.
+  onTapFirstpage() {
+    Get.toNamed(
+      AppRoutes.firstPageScreen,
     );
   }
 

@@ -2,13 +2,31 @@ import 'package:flutter/material.dart';
 import 'package:deepdiaryapp/core/app_export.dart';
 
 class AppStyle {
+  static TextStyle txtSFProTextBold20 = TextStyle(
+    color: ColorConstant.blueGray900,
+    fontSize: getFontSize(
+      20,
+    ),
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w700,
+  );
+
   static TextStyle txtRobotoRegular16 = TextStyle(
-    color: ColorConstant.blueGray400,
+    color: ColorConstant.blueGray40002,
     fontSize: getFontSize(
       16,
     ),
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle txtSFProTextBold16 = TextStyle(
+    color: ColorConstant.blueGray400,
+    fontSize: getFontSize(
+      16,
+    ),
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w700,
   );
 
   static TextStyle txtRalewayRomanSemiBold18 = TextStyle(
@@ -29,8 +47,26 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtRalewayRomanBold24 = TextStyle(
+  static TextStyle txtSFProTextMedium15 = TextStyle(
+    color: ColorConstant.blueGray40001,
+    fontSize: getFontSize(
+      15,
+    ),
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle txtRalewayRomanBold24Gray900 = TextStyle(
     color: ColorConstant.gray900,
+    fontSize: getFontSize(
+      24,
+    ),
+    fontFamily: 'Raleway',
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle txtRalewayRomanBold24 = TextStyle(
+    color: ColorConstant.whiteA700,
     fontSize: getFontSize(
       24,
     ),

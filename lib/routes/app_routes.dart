@@ -1,5 +1,9 @@
-import 'package:deepdiaryapp/presentation/k0_screen/k0_screen.dart';
-import 'package:deepdiaryapp/presentation/k0_screen/binding/k0_binding.dart';
+import 'package:deepdiaryapp/presentation/login_screen/login_screen.dart';
+import 'package:deepdiaryapp/presentation/login_screen/binding/login_binding.dart';
+import 'package:deepdiaryapp/presentation/frame_one_screen/frame_one_screen.dart';
+import 'package:deepdiaryapp/presentation/frame_one_screen/binding/frame_one_binding.dart';
+import 'package:deepdiaryapp/presentation/first_page_screen/first_page_screen.dart';
+import 'package:deepdiaryapp/presentation/first_page_screen/binding/first_page_binding.dart';
 import 'package:deepdiaryapp/presentation/file_upload_screen/file_upload_screen.dart';
 import 'package:deepdiaryapp/presentation/file_upload_screen/binding/file_upload_binding.dart';
 import 'package:deepdiaryapp/presentation/app_navigation_screen/app_navigation_screen.dart';
@@ -7,7 +11,11 @@ import 'package:deepdiaryapp/presentation/app_navigation_screen/binding/app_navi
 import 'package:get/get.dart';
 
 class AppRoutes {
-  static const String k0Screen = '/k0_screen';
+  static const String loginScreen = '/login_screen';
+
+  static const String frameOneScreen = '/frame_one_screen';
+
+  static const String firstPageScreen = '/first_page_screen';
 
   static const String fileUploadScreen = '/file_upload_screen';
 
@@ -17,10 +25,24 @@ class AppRoutes {
 
   static List<GetPage> pages = [
     GetPage(
-      name: k0Screen,
-      page: () => K0Screen(),
+      name: loginScreen,
+      page: () => LoginScreen(),
       bindings: [
-        K0Binding(),
+        LoginBinding(),
+      ],
+    ),
+    GetPage(
+      name: frameOneScreen,
+      page: () => FrameOneScreen(),
+      bindings: [
+        FrameOneBinding(),
+      ],
+    ),
+    GetPage(
+      name: firstPageScreen,
+      page: () => FirstPageScreen(),
+      bindings: [
+        FirstPageBinding(),
       ],
     ),
     GetPage(
@@ -39,9 +61,9 @@ class AppRoutes {
     ),
     GetPage(
       name: initialRoute,
-      page: () => K0Screen(),
+      page: () => LoginScreen(),
       bindings: [
-        K0Binding(),
+        LoginBinding(),
       ],
     )
   ];
