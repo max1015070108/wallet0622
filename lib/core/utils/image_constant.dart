@@ -5,6 +5,8 @@ class ImageConstant {
 
   static String imgArrowleft = 'assets/images/img_arrowleft.svg';
 
+  static String imgGroup109 = 'assets/images/img_group109.png';
+
   static String imgArrowup = 'assets/images/img_arrowup.svg';
 
   static String imgUser = 'assets/images/img_user.svg';
@@ -24,8 +26,6 @@ class ImageConstant {
   static String imgLogo = 'assets/images/img_logo.svg';
 
   static String imgCheckmark = 'assets/images/img_checkmark.svg';
-
-  static String imgGroup73 = 'assets/images/img_group73.png';
 
   static String imgEye = 'assets/images/img_eye.svg';
 
