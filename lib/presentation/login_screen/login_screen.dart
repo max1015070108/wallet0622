@@ -18,7 +18,7 @@ class LoginScreen extends GetWidget<LoginController> {
                 decoration: BoxDecoration(
                     color: ColorConstant.whiteA700,
                     image: DecorationImage(
-                        image: AssetImage(ImageConstant.imgGroup140),
+                        image: AssetImage(ImageConstant.imgGroup153),
                         fit: BoxFit.cover)),
                 child: SizedBox(
                     width: double.maxFinite,
