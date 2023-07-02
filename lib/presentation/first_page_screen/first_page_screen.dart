@@ -18,7 +18,7 @@ class FirstPageScreen extends GetWidget<FirstPageController> {
                 decoration: BoxDecoration(
                     color: ColorConstant.whiteA700,
                     image: DecorationImage(
-                        image: AssetImage(ImageConstant.imgGroup153),
+                        image: AssetImage(ImageConstant.imgGroup166),
                         fit: BoxFit.cover)),
                 child: SizedBox(
                     width: double.maxFinite,
@@ -232,7 +232,7 @@ class FirstPageScreen extends GetWidget<FirstPageController> {
                                   ])),
                           Spacer(),
                           CustomImageView(
-                              svgPath: ImageConstant.imgArrowleft,
+                              svgPath: ImageConstant.imgArrowleftWhiteA700,
                               height: getSize(53),
                               width: getSize(53),
                               margin: getMargin(bottom: 78),
