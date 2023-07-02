@@ -148,7 +148,7 @@ class FileUploadScreen extends GetWidget<FileUploadController> {
                                             AppStyle.txtRalewayRomanSemiBold18))
                               ])),
                       CustomImageView(
-                          svgPath: ImageConstant.imgArrowleft,
+                          svgPath: ImageConstant.imgArrowleftWhiteA700,
                           height: getVerticalSize(53),
                           width: getHorizontalSize(54),
                           margin: getMargin(top: 93),

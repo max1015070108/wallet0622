@@ -17,7 +17,7 @@ class ImageConstant {
 
   static String imgImage1 = 'assets/images/img_image1.png';
 
-  static String imgGroup166 = 'assets/images/img_group166.png';
+  static String imgGroup179 = 'assets/images/img_group179.png';
 
   static String imgCheckmark = 'assets/images/img_checkmark.svg';
 
