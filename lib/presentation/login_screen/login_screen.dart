@@ -18,7 +18,7 @@ class LoginScreen extends GetWidget<LoginController> {
                 decoration: BoxDecoration(
                     color: ColorConstant.whiteA700,
                     image: DecorationImage(
-                        image: AssetImage(ImageConstant.imgGroup109),
+                        image: AssetImage(ImageConstant.imgGroup140),
                         fit: BoxFit.cover)),
                 child: SizedBox(
                     width: double.maxFinite,
@@ -68,13 +68,7 @@ class LoginScreen extends GetWidget<LoginController> {
                         ])))));
   }
 
-  /// Navigates to the frameOneScreen when the action is triggered.
-
-  /// When the action is triggered, this function uses the `Get` package to
-  /// push the named route for the frameOneScreen.
   onTapImgLayerfiftyone() {
-    Get.toNamed(
-      AppRoutes.frameOneScreen,
-    );
+    // TODO: implement Actions
   }
 }

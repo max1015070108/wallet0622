@@ -1,7 +1,5 @@
 import 'package:deepdiaryapp/presentation/login_screen/login_screen.dart';
 import 'package:deepdiaryapp/presentation/login_screen/binding/login_binding.dart';
-import 'package:deepdiaryapp/presentation/frame_one_screen/frame_one_screen.dart';
-import 'package:deepdiaryapp/presentation/frame_one_screen/binding/frame_one_binding.dart';
 import 'package:deepdiaryapp/presentation/first_page_screen/first_page_screen.dart';
 import 'package:deepdiaryapp/presentation/first_page_screen/binding/first_page_binding.dart';
 import 'package:deepdiaryapp/presentation/file_upload_screen/file_upload_screen.dart';
@@ -12,8 +10,6 @@ import 'package:get/get.dart';
 
 class AppRoutes {
   static const String loginScreen = '/login_screen';
-
-  static const String frameOneScreen = '/frame_one_screen';
 
   static const String firstPageScreen = '/first_page_screen';
 
@@ -29,13 +25,6 @@ class AppRoutes {
       page: () => LoginScreen(),
       bindings: [
         LoginBinding(),
-      ],
-    ),
-    GetPage(
-      name: frameOneScreen,
-      page: () => FrameOneScreen(),
-      bindings: [
-        FrameOneBinding(),
       ],
     ),
     GetPage(

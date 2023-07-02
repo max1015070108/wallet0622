@@ -18,7 +18,7 @@ class FirstPageScreen extends GetWidget<FirstPageController> {
                 decoration: BoxDecoration(
                     color: ColorConstant.whiteA700,
                     image: DecorationImage(
-                        image: AssetImage(ImageConstant.imgGroup109),
+                        image: AssetImage(ImageConstant.imgGroup140),
                         fit: BoxFit.cover)),
                 child: SizedBox(
                     width: double.maxFinite,
