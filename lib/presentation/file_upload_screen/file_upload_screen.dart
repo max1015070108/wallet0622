@@ -40,7 +40,7 @@ class FileUploadScreen extends GetWidget<FileUploadController> {
                           padding: getPadding(
                               left: 15, top: 13, right: 15, bottom: 13),
                           decoration: AppDecoration.outlineGray300.copyWith(
-                              borderRadius: BorderRadiusStyle.roundedBorder7),
+                              borderRadius: BorderRadiusStyle.roundedBorder5),
                           child: Column(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -119,7 +119,7 @@ class FileUploadScreen extends GetWidget<FileUploadController> {
                                     color: ColorConstant.whiteA700,
                                     shape: RoundedRectangleBorder(
                                         side: BorderSide(
-                                            color: ColorConstant.gray40001,
+                                            color: ColorConstant.gray400,
                                             width: getHorizontalSize(2)),
                                         borderRadius:
                                             BorderRadiusStyle.roundedBorder10),
@@ -128,8 +128,7 @@ class FileUploadScreen extends GetWidget<FileUploadController> {
                                         width: getHorizontalSize(231),
                                         padding:
                                             getPadding(top: 58, bottom: 58),
-                                        decoration: AppDecoration
-                                            .outlineGray40001
+                                        decoration: AppDecoration.outlineGray400
                                             .copyWith(
                                                 borderRadius: BorderRadiusStyle
                                                     .roundedBorder10),

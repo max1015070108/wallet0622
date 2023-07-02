@@ -6,15 +6,15 @@ class ColorConstant {
 
   static Color gray2007a = fromHex('#7aefefef');
 
-  static Color gray400 = fromHex('#c4c6ca');
+  static Color gray400 = fromHex('#b8b8b8');
 
   static Color blueGray100 = fromHex('#d9d9d9');
 
   static Color gray60001 = fromHex('#757575');
 
-  static Color blueGray400 = fromHex('#8b8e97');
-
   static Color blueGray50 = fromHex('#f1f1f1');
+
+  static Color blueGray400 = fromHex('#888888');
 
   static Color gray900 = fromHex('#1c1c1c');
 
@@ -24,15 +24,7 @@ class ColorConstant {
 
   static Color gray300 = fromHex('#dfdfdf');
 
-  static Color gray40001 = fromHex('#b8b8b8');
-
   static Color black900 = fromHex('#000000');
-
-  static Color blueGray900 = fromHex('#26292e');
-
-  static Color blueGray40002 = fromHex('#888888');
-
-  static Color blueGray40001 = fromHex('#8d9099');
 
   static Color whiteA700 = fromHex('#ffffff');
 

@@ -10,7 +10,6 @@ final Map<String, String> enUs = {
   "lbl_file_upload": "File Upload ",
   "lbl_metamask": "MetaMask",
   "msg_choose_your_preferred": "Choose your preferred wallet",
-  "lbl_frame_one": "Frame One",
   "lbl_login": "login",
   "lbl_first_page": "first page",
   "msg_drop_your_files": "Drop your files here",
