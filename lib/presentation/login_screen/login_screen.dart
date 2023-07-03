@@ -69,6 +69,8 @@ class LoginScreen extends GetWidget<LoginController> {
   }
 
   onTapImgLayerfiftyone() {
+    print("i am here");
     // TODO: implement Actions
+    Get.toNamed(AppRoutes.firstPageScreen);
   }
 }

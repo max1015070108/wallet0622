@@ -8,6 +8,8 @@ import 'package:get/get.dart';
 class LoginBinding extends Bindings {
   @override
   void dependencies() {
+    //print log here
+    print('LoginBinding');
     Get.lazyPut(() => LoginController());
   }
 }

@@ -32,7 +32,11 @@ class FileUploadScreen extends GetWidget<FileUploadController> {
                                     svgPath: ImageConstant.imgBicloudarrowup,
                                     height: getVerticalSize(47),
                                     width: getHorizontalSize(44),
-                                    margin: getMargin(left: 8))
+                                    margin: getMargin(left: 8),
+                                    onTap: () {
+                                       onTapImgLayerfiftyone();
+                                    }),
+
                               ])),
                       Container(
                           width: getHorizontalSize(310),
@@ -166,5 +170,10 @@ class FileUploadScreen extends GetWidget<FileUploadController> {
     Get.toNamed(
       AppRoutes.firstPageScreen,
     );
+  }
+
+  //upload file from local disk
+  onTapImgLayerfiftyone() {
+    controller.uploadFile();
   }
 }

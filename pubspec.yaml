@@ -12,6 +12,9 @@ dependencies:
   cached_network_image: ^3.2.1
   flutter_svg: ^1.1.6
   intl: ^0.18.0
+  file_picker: ^4.6.0
+  path_provider: ^2.0.8
+  path: ^1.8.1
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
